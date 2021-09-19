@@ -26,7 +26,6 @@ export default defineComponent({
   mounted() {
     for (let i = 0; i < 1000; i++) {
       this.list.push(i);
-      
     }
   }
 });
