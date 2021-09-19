@@ -1,5 +1,5 @@
 # vue-3-virtual-scroll-list
-Ported [vue-virtual-scroll-list](https://github.com/tangbc/vue-virtual-scroll-list/tree/v1.4.7) v1.4.7 from [tangbc](https://github.com/tangbc) to work with Vue 3.
+Ported [vue-virtual-scroll-list](https://github.com/tangbc/vue-virtual-scroll-list/tree/v1.4.7) v1.4.7 by [tangbc](https://github.com/tangbc) to work with Vue 3.
 
 Only tested with variable mode: 
 ```vue
