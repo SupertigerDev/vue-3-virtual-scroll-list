@@ -115,7 +115,8 @@ export default defineComponent({
 
     const defaultSlot = computed(() => {
       const slots = (context.slots as any)?.default?.() as VNode[];
-      return slots.map(s => s.children).flat() as VNode[];
+      console.log(slots)
+      return slots.map(s => s.type === "Symbol(Fragment)" ? s.children : s).flat() as VNode[];
     });
 
     // return the right zone info based on `start/index`.
