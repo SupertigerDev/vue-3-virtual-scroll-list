@@ -1,5 +1,5 @@
 {
-  "name": "vue-3-virtual-scroll-list",
+  "name": "@supertiger/vue-3-virtual-scroll-list",
   "version": "1.0.0",
   "description": "",
   "main": "dist/virtual-list.ssr.js",
