@@ -83,6 +83,13 @@ export default defineComponent({
       default: () => {}
     }
   },
+  methods: {
+    forceRender() {
+      window.requestAnimationFrame(() => {
+       this.$forceUpdate();
+      });
+    }
+  },
   setup(props, context) {
     const instance = getCurrentInstance();
 
@@ -105,7 +112,7 @@ export default defineComponent({
     delta.varAverSize = 0; // average/estimate item height before variable be calculated.
     delta.varLastCalcIndex = 0; // last calculated variable height/offset index, always increase.
 
-    // public method, force render ui list if needed.
+    //force render ui list if needed.
     // call this before the next rerender to get better performance.
     const forceRender = () => {
       window.requestAnimationFrame(() => {
