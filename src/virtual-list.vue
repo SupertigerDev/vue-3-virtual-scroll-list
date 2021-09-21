@@ -88,6 +88,10 @@ export default defineComponent({
       window.requestAnimationFrame(() => {
        this.$forceUpdate();
       });
+    },
+    // set manual scroll top.
+    setScrollTop (scrollTop: number) {
+      this.$el.scrollTop = scrollTop;
     }
   },
   setup(props, context) {
